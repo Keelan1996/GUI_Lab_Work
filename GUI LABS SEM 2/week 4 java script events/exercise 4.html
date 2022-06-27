@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>HTML5 Events</title>
+</head>
+<body>
+   
+	  <button id="myButton" onclick="myFunction()">Click me!</button>
+	  <h1 id="h2" onclick="myFunction1()">This is a H2 heading<h1>
+	 <h3 id="h3" >this is a h3 heading<h3>
+	  <h4 id="h3">this is a h4 heading<h4>
+</body>
+</html>
+
+<script> 
+         function myFunction(){
+		
+		let btn= document.getElementById("myButton");
+		btn.addEventListener("click", myFunction);
+		}
+		function myFunction1(){
+		alert(" this is an alert");
+		
+		}
+		
+		function myFunction2(){
+		
+		alert(" this is an alert");
+		
+		}
+		
+		function myFunction3(){
+		
+		alert(" this is an alert");
+		
+		}
+		
+</script>

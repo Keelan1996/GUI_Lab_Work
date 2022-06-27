@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title></title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+        
+		let myNum = Number (prompt("Enter a Number between 1 & 100:"));
+		let numRan = Math.ceil(Math.random() * 100);
+		alert(numRan);
+		
+		
+		for(i=0; i<6; i++){
+		
+		if(myNum == numRan){
+		    alert("Good Guess" + "\n");
+			}
+			 else if(myNum>numRan){
+			 myNum = Number(prompt("Too high - Enter a Number between 1 & 100: "));
+			 }
+			 else{
+			 myNum = Number(prompt("Too Low- (Enter a Number between 1 & 100: "));
+			 }
+			
+			
+			
+			
+		  }//for 
+		  
+		  if(myNum==numRan)
+		 { document.write("<img src='Smiley_Face.JFIF' alt='smile'>!");}
+		
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>web storage</title>
+</head>
+<body bgcolor= "lightyellow">
+   
+    <h1> This is page 2 </h1>
+	<a href="excerise 3.html">go to page 1</a>
+	<br><br><br>
+	<button onclick="recover()">recover from local storage</button>
+	<h2 id="output"><h2>	
+
+
+	
+</body>
+</html>
+<script>
+  function recover(){
+		let myVar = localStorage.myNewItem;
+		document.getElementById("output").innerHTML = myVar;
+		 }
+</script>	

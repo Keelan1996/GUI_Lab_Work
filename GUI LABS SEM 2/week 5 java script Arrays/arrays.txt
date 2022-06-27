@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<title>JavaScript Arrays</title>
+<body>
+	<input id="fruitIn">
+	<button onclick="addFruit()">Add Fruit</button>
+	<button onclick="showArray()">Show Array</button><br><br>
+	<input id="indexIn">
+	<button onclick="showIndex()">Show Array Index</button><br><br>	
+	<input id="searchFor">
+	<button onclick="search()">Search</button><br><br>
+	<button onclick="delIndex()">Delete Index</button>
+	<input id="deleteMe">
+	<h1 id="output"></h1>
+	<h1 id="outputIndex"></h1>
+</body>
+</html>
+
+<script>
+	let fruit = ["Banana", "Orange", "Apple", "Pear"];
+	
+	function delIndex(){
+		let forDelete = document.getElementById("deleteMe").value;
+		fruit.splice(forDelete, 1);
+	}
+	
+	function search(){
+		let searchVal = document.getElementById("searchFor").value;
+		if (fruit.indexOf(searchVal) == -1){
+			alert("Element not found!");
+		} else {
+			alert("Element found at index " + fruit.indexOf(searchVal));
+		}
+	}
+	
+	
+	function showIndex(){
+		let indexVal = document.getElementById("indexIn").value;
+		if (indexVal > fruit.length - 1){
+			document.getElementById("outputIndex").innerHTML = "Value is too high! There are " + fruit.length + " elements in the array!";
+		}
+		else {
+			document.getElementById("outputIndex").innerHTML = fruit[indexVal];
+		}
+	}
+	
+	function showArray(){
+		document.getElementById("output").innerHTML = fruit;
+	}
+	
+	function addFruit(){
+		let newFruit = document.getElementById("fruitIn").value;
+		fruit.push(newFruit);
+	}
+	
+
+</script>

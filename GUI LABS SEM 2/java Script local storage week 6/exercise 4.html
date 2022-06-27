@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>web storage</title>
+</head>
+<body>
+   <h1> This is page 1 </h1>
+	<a href="page2.html">go to page 2</a>
+	<br> <br> <br>
+	
+	enter name: <input id="inBox">
+	<button onclick="save()">save to local storage</button>
+    <button onclick="clear1()">Clear local Storage</button>  
+</body>
+</html>
+<script>
+  function save(){
+		 let valueIn = document.getElementById("inBox").value;
+		 localStorage.myNewItem = valueIn;
+		 }
+		 
+  function clear1(){
+       localStorage.clear();
+  }
+</script>	

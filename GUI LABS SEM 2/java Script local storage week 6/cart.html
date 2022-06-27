@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>web storage</title>
+</head>
+<center>
+<body bgcolor= "lightyellow">
+<a href="exercise 6.html" bgcolor="purple" >Home </a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="shop.html" bgcolor="purple">Shop </a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="cart.html" bgcolor="purple">Cart</a>
+	
+
+	<p id="output"></p>
+	<p id="outputPrice1"></p>
+	<p id="outputPrice2"></p>
+	<p id="outputPrice3"></p>
+	
+	<p id="totalsum"></p>
+</center>	
+</body>
+</html>
+<script>
+  
+  document.getElementById("output").innerHTML = " Hello " + localStorage.username + "! Here is your Shopping cart total: " + localStorage.quantity;
+  
+  
+   document.getElementById("outputPrice1").innerHTML = (49.99 *  localStorage.quantity1).toFixed(2);
+   
+   document.getElementById("outputPrice2").innerHTML = (340 * localStorage.quantity2).toFixed(2);
+	
+	document.getElementById("outputPrice3").innerHTML = (231 * localStorage.quantity3).toFixed(2);
+	
+	let dot = (49.99 *  +localStorage.quantity1).toFixed(2);
+	let watch = (150 * +localStorage.quantity2).toFixed(2);
+	let phones = (231 * +localStorage.quantity3).toFixed(2);
+	
+	document.getElementById("totalsum").innerHTML = +dot + +watch + +phones;
+	
+</script>	

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>web storage</title>
+</head>
+<body bgcolor= "lightyellow">
+<center>
+    <a href="exercise 6.html" bgcolor="purple" >Home </a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="shop.html" bgcolor="purple">Shop </a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="cart.html" bgcolor="purple">Cart</a>
+	
+	<br> <br> <br> 
+    
+	Enter Your Name: <input id="inBox">
+	<button onclick="save()">save</button>
+	
+</center>	   
+</body>
+</html>
+<script>
+  function save(){
+		 let nameIn = document.getElementById("inBox").value;
+		 localStorage.username= nameIn;
+		 }
+</script>	

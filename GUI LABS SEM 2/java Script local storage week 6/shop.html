@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>web storage</title>
+</head>
+<body bgcolor= "lightyellow">
+<center>
+    <a href="exercise 6.html" bgcolor="purple" >Home </a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="shop.html" bgcolor="purple">Shop </a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="cart.html" bgcolor="purple">Cart</a>
+	
+	
+	
+	
+	<br> <br> <br> 
+   
+   <img src="amazon.jfif" alt="amazon">
+   <br><br>
+   Amazon echo Dot
+   <br>
+   Price: $49.99
+   <br>
+	
+	Quantity: <input id="inQuantity1">
+	<button onclick="addToCart()">add to cart</button>
+	
+	
+	<br><br>
+   samsung watch
+   <br>
+   Price: $340
+   <br>
+    Quantity: <input id="inQuantity2">
+	<button onclick="addToCart()">add to cart</button>
+	
+<br><br>
+   samsung watch
+   <br>
+   Price: $231
+   <br>
+    Quantity: <input id="inQuantity3">
+	<button onclick="addToCart()">add to cart</button>
+	
+	
+</center>	   
+</body>
+</html>
+<script>
+  function addToCart(){
+		 let productIn1 = document.getElementById("inQuantity1").value;
+		 localStorage.quantity1= productIn1;
+		 
+		 let productIn2 = document.getElementById("inQuantity2").value;
+		 localStorage.quantity2= productIn2;
+		 
+		 let productIn3 = document.getElementById("inQuantity3").value;
+		 localStorage.quantity3= productIn3;
+		 
+		 
+		 }
+</script>	

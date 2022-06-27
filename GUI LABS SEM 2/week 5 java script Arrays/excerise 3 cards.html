@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>arrays card deck</title>
+</head>
+<body>
+   <h1 id="deckOutput"</h1>
+</body>
+</html>
+<script> 
+  let deck = [];
+  
+  for(i=1; i<=13; i++)
+  {
+  deck.push(i + "_of_Diamonds");
+  deck.push(i + "_of_hearts");
+  deck.push(i + "_of_clubs");
+  deck.push(i + "_of_spades");
+  }
+  
+  function shuffle()
+{
+    for(i=1; i<520; i++)
+    {
+      randomNumber = Math.floor((Math.random() * 51));
+      bottomCard = deck.pop();
+      deck.splice(randomNumber, 0, bottomCard);
+    }
+}
+ shuffle();
+ 
+ document.getElementById("deckOutput").innerHTML = deck;
+
+</script>
